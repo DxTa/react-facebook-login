@@ -40,7 +40,7 @@ class FacebookLogin extends React.Component {
     size: 'metro',
     fields: 'name',
     cssClass: 'kep-login-facebook',
-    version: '2.3',
+    version: '2.8',
     language: 'en_US',
     disableMobileRedirect: false,
   };
@@ -93,7 +93,7 @@ class FacebookLogin extends React.Component {
       let js = element;
       if (d.getElementById(id)) { return; }
       js = d.createElement(s); js.id = id;
-      js.src = `//connect.facebook.net/${language}/all.js`;
+      js.src = `//connect.facebook.net/${language}/sdk.js`;
       fjs.parentNode.insertBefore(js, fjs);
     })(document, 'script', 'facebook-jssdk');
   }
